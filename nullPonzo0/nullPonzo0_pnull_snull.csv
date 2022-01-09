@@ -1,0 +1,4 @@
+"rt","response_type","key_press","response","avg_frame_time","center_x","center_y","block","event","trial_type","trial_index","time_elapsed","internal_node_id","resp","target","pid"
+"15702","key"," "," ","16.681190223166844","576","286","no_feedback","trial","psychophysics","0","15708","0.0-0.0-0.0","57","49","null"
+"13840","key"," "," ","16.712212817412333","576","286","feedback","trial","psychophysics","1","29552","0.0-1.0-0.0","26","22","null"
+"7007","key"," "," ","16.711217183770884","576","286","feedback","feedback","psychophysics","2","36562","0.0-1.0-1.0","","","null"
