@@ -1,6 +1,0 @@
-"rt","response_type","key_press","response","avg_frame_time","center_x","center_y","block","event","trial_type","trial_index","time_elapsed","internal_node_id","resp","target","pid","sid"
-"13914.000000000002","key"," "," ","16.68465227817746","576","250","no_feedback","trial","psychophysics","0","13925","0.0-0.0-0.0","54","65","null","null"
-"17978","key"," "," ","16.711627906976744","576","250","feedback","trial","psychophysics","1","31907","0.0-1.0-0.0","44","51","null","null"
-"10139","key"," "," ","16.71122112211221","576","250","feedback","feedback","psychophysics","2","42049","0.0-1.0-1.0","","","null","null"
-"11455.000000000007","key"," "," ","16.711988304093566","576","250","feedback","trial","psychophysics","3","53506","0.0-1.0-0.1","42","43","null","null"
-"3754.0000000000073","key"," "," ","16.709821428571427","576","250","feedback","feedback","psychophysics","4","57263","0.0-1.0-1.1","","","null","null"
