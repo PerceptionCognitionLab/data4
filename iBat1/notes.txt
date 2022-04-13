@@ -1,0 +1,6 @@
+pilot: result of UCI people, problem with pid fixed.  small changes made.
+pilot1: 4 people from prolific.  problem with ml task miscode of instructions
+pilot2: 10 people prolific
+- 3 ppl misunderstood ponzo "height"
+- a few out of bounds responses, need limits on adjustments
+
