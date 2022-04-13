@@ -1,1 +1,1 @@
-awk 'FNR==1 && NR!=1{next;}{print}' *.csv >> merged.csv
+awk 'FNR==1 && NR!=1{next;}{print}' iBat1*.csv >> merged.csv
