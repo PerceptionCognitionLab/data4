@@ -1,1 +1,3 @@
+#merge all csv files in a directory
+#./mergeCSV outfile
 awk 'FNR==1 && NR!=1{next;}{print}' *.csv >> $1 
