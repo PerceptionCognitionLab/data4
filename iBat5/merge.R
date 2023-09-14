@@ -10,7 +10,7 @@ out=NULL
 for (i in 1:length(filenames)){
   dat=read.csv(filenames[i])
   rowSelect <- dat$task %in% c("br","eb","pog","pz","zol")
-  out1=select(dat[rowSelect,],pid,task,resp,start,version,parA,rt,time_elapsed)
+  out1=select(dat[rowSelect,],pid,sid,task,resp,start,version,parA,rt,time_elapsed)
   out=rbind(out,out1)
 }
 
