@@ -3,16 +3,17 @@
 
 
 args = commandArgs(trailingOnly=TRUE)
-library(tidyverse)
 filenames=list.files(pattern="csv")
 
-out=NULL
+out=list()
 for (i in 1:length(filenames)){
   dat=read.csv(filenames[i])
   rowSelect <- dat$task %in% c("br","eb","pog","pz","zol")
-  out1=select(dat[rowSelect,],pid,sid,task,resp,start,version,parA,rt,time_elapsed)
-  out=rbind(out,out1)
+  colSelect <- c("pid","sid","task","resp","start","version","parA","rt","time_elapsed","block")
+  out1=dat[rowSelect,colSelect]
+  out[[i]] = out1
 }
 
-rownames(out)=NULL
-write.table(out,file=args[1],quote=F,row.names = F)
+allDat=do.call(rbind,out)
+rownames(allDat)=NULL
+write.table(allDat,file=args[1],quote=F,row.names = F)
