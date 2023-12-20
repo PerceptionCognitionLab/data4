@@ -1,4 +1,3 @@
-
 # Initialize Function
 makeDat = function(){
   
@@ -29,7 +28,6 @@ makeDat = function(){
   
   # Combining Data
   all_data = do.call(rbind, out_list)
-  all_data$sub = as.numeric(factor(all_data$pid))
   
   # Getting rid of repeat participants
   repeat_pid = names(which(table(all_data$pid)>150))
@@ -38,6 +36,12 @@ makeDat = function(){
   sid_rep = unique(tdat$sid)
   bad_sid = sid_rep[2]
   all_data = all_data[!all_data$sid==bad_sid,]
+  
+  # Adding Subject Numbers 
+  all_data$sub = as.numeric(factor(all_data$pid))
+  
+  # Adding Trial Numbers
+  all_data$trial = rep(rep(1:15, 5*2), max(all_data$sub))
   
   
   # Creating Scores for each task
@@ -87,7 +91,7 @@ makeDat = function(){
   if (!dir.exists(dir)) {
     dir.create(dir, recursive = TRUE)
   }
-  write.csv(all_data, "merged_data/raw-data.csv")
+  write.csv(all_data, "merged_data/raw-data.csv", row.names = F)
 }
 
 # Executing the function
