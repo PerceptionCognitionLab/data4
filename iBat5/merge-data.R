@@ -90,5 +90,5 @@ makeDat = function(){
   write.csv(all_data, "merged_data/raw-data.csv")
 }
 
-# Excuting the function
+# Executing the function
 makeDat()
